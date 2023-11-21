@@ -1,0 +1,60 @@
+.container{
+    margin-top: 30px;
+   
+}
+#card{
+    height: 200px;
+   
+}
+.card-body img{
+    margin-left: 80px;
+}
+.card2{
+    height: 80px;
+    width: 500px;
+    margin: 20px;
+
+    background: linear-gradient(to top,rgb(165, 163, 163)50%,white 50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+}
+.card2:hover{
+    background-position: left bottom;
+    color: rgb(244, 239, 239);
+    box-shadow: 0 0 20px rgb(8, 8, 8);
+    border: none;
+}
+.paragraph{
+    width: 800px;
+    margin-left: 300px;
+}
+.sentence{
+    margin-left: 60px;
+}
+/* Container holding the image and the text */
+.container-fluid {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    
+  }
+  .top-left h2{
+    
+    width: 460px;
+    font-size: 43px;
+    margin-top: 110px;
+    margin-left: 10PX;
+
+  }
+  .top-left p{
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 32px;
+    font-size: 20px;
+  }
+  

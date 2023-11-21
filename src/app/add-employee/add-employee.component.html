@@ -1,0 +1,93 @@
+<!-- {{employeeDetail|json}} -->
+
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="text-center my-3 text-light">Add Employee Details</h1>
+        <div class="col-6">
+            <!-- form -->
+            <form >
+
+               <!-- Id
+               <div class="form-floating mt-3 mb-3">
+                <input [(ngModel)]="employeeDetail.id" name="id" type="text" class="form-control" id="floatingInput" placeholder="Id">
+                <label for="floatingInput">Id</label>
+              </div> -->
+
+                <!-- Full Name -->
+                <div class="form-floating mt-3 mb-3">
+                    <input  [(ngModel)]="employeeDetail.name" name="name" type="text" class="form-control" id="floatingInput" placeholder="Full Name">
+                    <label for="floatingInput">Full Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employeeDetail.email" name="email" type="text" class="form-control" id="floatingPhoto" placeholder="Email">
+                    <label for="floatingPassword">Email</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employeeDetail.Photourl" name="Photourl" type="text" class="form-control" id="floatingPhoto" placeholder="Photo">
+                    <label for="floatingPassword">Photourl</label>
+                  </div>
+
+                  <!-- email -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employeeDetail.mobile" name="mobil"  type="text" class="form-control" id="floatingemail" placeholder="Phone">
+                    <label for="floatingInput">Phone</label>
+                  </div>
+
+                  <!-- mobile -->
+                  
+
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employeeDetail.designation" name="designation" type="text" class="form-control" id="floatingcompany" placeholder="Company Name">
+                    <label for="floatingInput">Designation</label>
+                  </div>
+
+                  <!-- company name -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employeeDetail.bloodgroup" name="bloodgroup" type="text" class="form-control" id="floatingcompany" placeholder="Company Name">
+                    <label for="floatingInput">Blood Group</label>
+                  </div>
+
+                  <!-- Title -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employeeDetail.dateOfBirth" name="dateOfBirth" type="date" class="form-control" id="floatingtitle" placeholder="Title">
+                    <label for="floatingtitle">Date of Birth</label>
+                  </div>
+
+                  <!-- group -->
+                    <div  class="mb-3 form-floating">
+                        <select class="form-control" [(ngModel)]="employeeDetail.gender" name="gender">
+                            <option  selected hidden and disabled>{{employeeDetail.gender}}</option>
+                            <option [value]="group.id" *ngFor="let group of getGender">{{group.name}}</option>
+                           
+                        </select>
+                    </div>
+
+                    <div  class="mb-3 form-floating">
+                        <select [(ngModel)]="employeeDetail.departmentid" name="departmentid" class="form-control" >
+                            <option  selected hidden and disabled >{{employeeDetail.departmentid}}</option>
+                            <option [value]="dep.id" *ngFor="let dep of alldpmt">{{dep.dept}}</option> 
+                           
+                        </select>
+                    </div>
+                    <div class="form-floating mb3">
+                        <input [(ngModel)]="employeeDetail.dateOfJoining" name="dateOfJoining" type="date" class="form-control" id="floatingtitle" placeholder="Title">
+                        <label for="floatingtitle">Date of Joining</label>
+                      </div>
+                    
+                    <!-- Button -->
+                    <div class="text-center">
+                        <input (click)="addEmp()" type="button" routerLink="/mainComponent/viewEmployeeDetails" value="submit" class="btn btn-outline-light my-3 p-2">
+                    </div>
+
+
+            </form>
+
+        </div>
+        <div class="col-6">
+            <!-- image -->
+            <!-- <img width="100%" height="550px" src="https://static.vecteezy.com/system/resources/previews/015/685/152/original/human-resource-management-strategic-planning-for-success-through-people-business-development-concept-by-choosing-professional-leaders-employee-competency-teamwork-man-pointing-virtual-icon-free-photo.jpg" alt="paste your photo link"> -->
+
+        </div>
+    </div>
+</div>

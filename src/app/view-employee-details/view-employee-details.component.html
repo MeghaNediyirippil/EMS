@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <br>
+  <form class="d-flex my-2" id="searchbtn">
+    <input class="form-control me-2 search" (keyup)="search($event)" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+  <h3>VIEW EMPLOYEES</h3>
+  <br>
+  <!-- {{allemployee|json}} -->
+  <!-- search -->
+  
+
+  <div class="row">
+    <div class="col" *ngFor="let emp of allemployee|filter:searchKey:'name'">
+      <div class="card" style="width: 18rem;">
+        <img [src]="emp.Photourl" height="350px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{emp.name}}</h5>
+          <p class="card-text"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Designation:{{emp.designation}}</li>
+          <li class="list-group-item">Email:{{emp.email}}</li>
+          <li class="list-group-item">Phone:{{emp.mobile}}</li>
+        </ul>
+
+        <div class="card-body">
+          <div class="design-btn1">
+          <button class="btn btn-outline-dark " routerLink="/mainComponent/viewEmployeeDetails/viewFullDetails/{{emp.id}}">View</button>&nbsp;&nbsp;&nbsp;
+          <button class="btn btn-outline-secondary mx-1" routerLink="/mainComponent/viewEmployeeDetails/editEmployeeDetails/{{emp.id}}">Edit</button>
+          </div>
+        <div class="design-btn2">
+          <button class="btn btn-outline-secondary mx-1" routerLink="/mainComponent/viewEmployeeDetails/IdCardDetails/{{emp.id}}">ID Card</button>
+          &nbsp;&nbsp;
+          <button (click)="deleteContact(emp.id)" class="btn btn-outline-dark">Delete</button>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

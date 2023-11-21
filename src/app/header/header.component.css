@@ -1,0 +1,36 @@
+nav{
+    /* background-color: rgb(254, 254, 255); */
+    background-color: #ecf0f3;
+    box-shadow: inset -13px -3px 1144px #ffffff, inset -30px -7px 12px rgba(0,0,0,.16);
+   
+   
+   
+}
+
+.nav-item a{
+    /* color: rgb(172, 170, 167); */
+    color: black;
+   
+   
+    
+}
+.navbar-brand{
+    /* color: rgb(172, 170, 167); */
+    color: black;
+    
+}
+i{
+    font-size: 40px;
+    margin: 0px 50px 0px 3px;
+    
+}
+#navbarSupportedContent{
+    margin-left: 410px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+#heading{
+    font-weight: 600;
+    font-size: 25px;
+}

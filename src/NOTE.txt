@@ -1,0 +1,20 @@
+1.create new projects
+        ng new employee-management- system
+2.Enter in to project
+    cd employee-management- system
+3.vs code
+    code .
+4.Run the project
+    ng s -o
+5.Remove the content in HTML page
+6.Install Third party library - bootstrap,fontawesome,google font
+7.create components
+    ng g c mainComponent
+    ng g c header
+    ng g c footer
+    ng g c addEmployee
+    ng g c editEmployeeDetails 
+    ng g c viewEmployeeDetails
+    ng g c pageNotFound
+8.create path in app-routing.moduke.ts
+9.Design the pages

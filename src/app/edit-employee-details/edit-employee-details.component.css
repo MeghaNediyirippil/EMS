@@ -1,0 +1,17 @@
+.container-fluid{
+    background-image: url('https://flowdog.io/wp-content/uploads/2021/11/System-DMS.png');   
+    background-size: cover;
+    color: white;
+}
+.col-6 img{
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    border-radius: 20px;
+
+}
+.col-6 form{
+    width: 400px;
+    margin-left: 200px;
+
+}

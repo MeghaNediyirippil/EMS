@@ -1,0 +1,88 @@
+{
+  "employees": [
+    {
+      "gender": "2",
+      "departmentid": "1",
+      "name": "Ashly",
+      "email": "ashly@gmail.com",
+      "Photourl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+      "mobile": "9876543210",
+      "designation": "HR ",
+      "bloodgroup": "B+",
+      "dateOfBirth": "1997-03-05",
+      "dateOfJoining": "2023-01-04",
+      "id": 4
+    },
+    {
+      "gender": "1",
+      "departmentid": "4",
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "Photourl": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+      "mobile": "9578654327",
+      "designation": "Developer",
+      "bloodgroup": "O+",
+      "dateOfBirth": "1994-11-02",
+      "dateOfJoining": "2023-03-15",
+      "id": 5
+    },
+    {
+      "gender": "2",
+      "departmentid": "2",
+      "name": "Harsha",
+      "email": "harsha@gmail.com",
+      "Photourl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80",
+      "mobile": "9876542345",
+      "designation": "Accountent",
+      "bloodgroup": "AB+",
+      "dateOfBirth": "1999-06-10",
+      "dateOfJoining": "2023-06-06",
+      "id": 7
+    },
+    {
+      "gender": "1",
+      "departmentid": "3",
+      "name": "Vimal",
+      "email": "vimal@gmail.com",
+      "Photourl": "https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1141",
+      "mobile": "8976547898",
+      "designation": "Sales Officer",
+      "bloodgroup": "B+",
+      "dateOfBirth": "1990-06-05",
+      "dateOfJoining": "2023-05-09",
+      "id": 8
+    }
+  ],
+  "gender": [
+    {
+      "id": "1",
+      "name": "Male"
+    },
+    {
+      "id": "2",
+      "name": "Female"
+    },
+    {
+      "id": "3",
+      "name": "Others"
+    }
+  ],
+  "Department": [
+    {
+      "id": "1",
+      "dept": "HR"
+    },
+    {
+      "id": "2",
+      "dept": "Accounts"
+    },
+    {
+      "id": "3",
+      "dept": "Sales"
+    },
+    {
+      "id": "4",
+      "dept": "IT"
+    }
+  ]
+}

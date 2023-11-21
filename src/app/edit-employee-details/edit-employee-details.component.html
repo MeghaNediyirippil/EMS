@@ -1,0 +1,101 @@
+<!-- {{employeeDetail|json}} -->
+<!-- {{emp|json}} -->
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h2 class="text-center my-3">EDIT CONTACT DETAILS</h2>
+        <div class="col-6">
+
+            <form>
+
+
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">Name</span>
+                    <input [(ngModel)]="emp.name" name="name" type="text" aria-label="First name" class="form-control">
+                </div>
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">Email</span>
+                    <input [(ngModel)]="emp.email" name="email" type="text" aria-label="First name" class="form-control">
+                </div>
+
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">Phone</span>
+                    <input [(ngModel)]="emp.mobile" name="mobile" type="text" aria-label="First name" class="form-control">
+                </div>
+
+
+                <div class="mb-3 input-group mb3">
+                    <span class="input-group-text">Date of Borth</span>
+                    <input [(ngModel)]="emp.dateOfBirth" name="dateOfBirth" type="date" class="form-control" id="floatingtitle" placeholder="Date of Joining">
+                    <label for="floatingtitle"></label>
+                </div>
+
+                
+                <div class="mb-3 input-group">
+                    <select class="form-control" [(ngModel)]="emp.gender" name="gender">
+                        <option selected hidden disabled>{{genDetail}}</option>
+                        <option  [value]="gen.id" *ngFor="let gen of genDetail">{{gen.name}}</option>
+
+                    </select>
+                </div>
+
+                
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">Blood Group</span>
+                    <input [(ngModel)]="emp.bloodgroup" name="bloodgroup" type="text" aria-label="First name" class="form-control">
+                </div>
+
+                <div class="mb-3 input-group">
+                    <select  [(ngModel)]="emp.departmentid" name="departmentid" class="form-control">
+                        <option selected hidden disabled>{{dptDetails}}</option>
+                        <option [value]="dt.id" *ngFor="let dt of dptDetails">{{dt.dept}}</option>
+
+                    </select>
+                </div>
+
+
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">Designation</span>
+                    <input [(ngModel)]="emp.designation" name="designation" type="text" aria-label="First name" class="form-control">
+                </div>
+
+
+
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">Photo URL</span>
+                    <input [(ngModel)]="emp.Photourl" name="Photourl" type="text" aria-label="First name" class="form-control">
+                </div>
+
+
+                
+                <div class="input-group mb3">
+                    <span class="input-group-text">Date of Joining</span>
+                    <input [(ngModel)]="emp.dateOfJoining" name="dateOfJoining" type="date" class="form-control" id="floatingtitle" placeholder="Date of Joining">
+                    <label for="floatingtitle"></label>
+                </div>
+
+                <div class="text-center">
+                    <input type="button" (click)="updateEmp()"  value="Submit"
+                        class="btn btn-outline-light my-3">
+                </div>
+
+
+            </form>
+
+        </div>
+        <div class="col-6">
+            <img width="100%" height="550px" [src]="emp.Photourl" alt="">
+
+        </div>
+    </div>
+</div>

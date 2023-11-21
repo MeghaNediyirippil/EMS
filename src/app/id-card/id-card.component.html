@@ -1,0 +1,30 @@
+<!-- {{employeeD|json}} -->
+<div class="container">
+    <div class="card">
+        <div class="tittle">
+            <h1>Developer</h1>
+        </div>
+        <div class="image">
+            <div class="outer">
+                <div class="inner">
+                    <img [src]="employeeD.Photourl" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="name">
+            {{employeeD.name}}
+        </div>
+        <div class="detail">
+            <div class="col">
+                <ul type="none">
+                    <li>Email : {{employeeD.email}}</li>
+                    <li>Phone : {{employeeD.mobile}}</li>
+                    <li>Blood Group : {{employeeD.bloodgroup}}</li>
+
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<br><br><br>

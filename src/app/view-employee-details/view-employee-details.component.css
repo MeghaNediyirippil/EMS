@@ -1,0 +1,51 @@
+.container-fluid{
+    /* background-color: rgb(226, 218, 218); */
+    background-color: black;
+    
+    
+}
+.card-title{
+    text-align: center;
+}
+.list-group-item{
+    text-align: center;
+}
+.card-body{
+    margin: 10px;
+}
+h3{
+    margin-left: 500px;
+    color: white;
+}
+.search{
+    width: 250px;
+}
+.card{
+    margin: 10px;
+}
+#searchbtn{
+    margin-left: 1140px;
+}
+.row{
+    margin-left: 16px;
+}
+.design-btn2{
+  margin-top: 15px;
+
+ 
+}
+.design-btn2 button{
+    margin-left: 0px;
+
+}
+.card-body .design-btn2{
+    margin-left: 28px;
+ 
+ }
+ 
+.card-body .design-btn1{
+    margin-left: 50px;
+ 
+ }
+ 
+
